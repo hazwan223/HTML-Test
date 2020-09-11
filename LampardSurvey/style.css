@@ -1,0 +1,89 @@
+
+    header{
+        grid-area: header;
+    }
+
+    main{
+        grid-area: main;
+
+    }
+
+    section{
+        grid-area: section;
+    }
+
+    aside{
+        grid-area: aside;
+    }
+
+    nav{
+        grid-area: nav;
+    }
+
+    footer{
+        grid-area: footer;
+    }
+    
+
+    body{
+        color: #fff;
+        font-family: fantasy;
+        text-align: center;
+    }
+
+    #content{
+        display: grid;
+        margin: 0px auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "header header header "
+        ". main ."
+        ". main ."
+        ". main ."
+        "section section section"
+        "footer footer footer";
+        grid-auto-rows: minmax(100px, auto);
+        grid-gap: 5px;
+    }
+
+    #content> *{
+        background:  rgb(0, 0, 0, 0.5) ;
+        padding: 20px;
+    }
+
+    html {
+        background-image: url("images/background.jpg");
+        background-size: cover;
+    }
+
+    #survey-form {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    #survey-form> *{
+        padding: 10px 10px;
+        border-radius: 10px;
+        font-size: 20px;
+        }
+    
+    #dropdown {
+        width: 60%;
+    }
+
+    #radio {
+        display: block;
+        font-family: 'Courier New';
+        }
+
+    #text-area {
+        text-align: left;
+    }
+
+    #submit {
+        margin: 20px;
+        width: 200px;
+    }
+
+
